@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CssStyle.css">
+</head>
+<body>
+<div class="thread">
+    <header class="header">
+        <div class="header_above">
+            <a class="brand" href="#">FURUMA</a>
+        </div>
+
+        <div class="header_below">
+            <ul class="navigation">
+                <li class="link">TRANG CHỦ</li>
+                <li class="link">GIỚI THIỆU</li>
+                <li class="link">HOẠT ĐỘNG</li>
+                <li class="link">TIN TỨC</li>
+                <li class="link">SỰ KIỆN</li>
+                <li class="link">DỊCH VỤ</li>
+                <li class="link">LIÊN HỆ</li>
+            </ul>
+        </div>
+    </header>
+    <div class="divstyle">
+        <form action="" method="">
+            <table class="tablestyle">
+                <tr>
+                    <td><label>Tên khách hàng</label></td>
+                    <td><input class="inputstyle" type="text" id="guestname"></td>
+                </tr>
+                <tr>
+                    <td><label>Số CMND:</label></td>
+                    <td><input class="inputstyle" type="text" id="guestid"></td>
+                </tr>
+                <tr>
+                    <td><label>Ngày sinh</label></td>
+                    <td><input class="inputstyle" type="date" id="guestdob"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input class="inputstyle" type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Địa chỉ/Address:</label></td>
+                    <td>
+                        <select class="selectstyled" id="address">
+                            <option>Đà Nẵng</option>
+                            <option>Hà Nội</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Tỉnh khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hạng khách hàng:</td>
+                    <td>
+                        <select class="selectstyled" id="guestclass">
+                            <option>Diamond</option>
+                            <option>Platinum</option>
+                            <option>Gold</option>
+                            <option>Silver</option>
+                            <option>Member</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giảm giá:</td>
+                    <td><input class="inputstyle" id="discount"></td>
+                </tr>
+                <tr>
+                    <td>Số lượng người đi cùng</td>
+                    <td><input class="inputstyle" type="text" id="amout"></td>
+                </tr>
+                <tr>
+                    <td>Số ngày thuê</td>
+                    <td><input class="inputstyle" type="text" id="rentdays"></td>
+                </tr>
+                <tr>
+                    <td>Loại dịch vụ</td>
+                    <td>
+                        <select class="selectstyled" id="services">
+                            <option>Villa</option>
+                            <option>House</option>
+                            <option>Room</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loại phòng</td>
+                    <td>
+                        <select class="selectstyled" id="roomtype">
+                            <option>VIP</option>
+                            <option>Business</option>
+                            <option>Normal</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><br>
+                        <button type="submit" class="buttonstyle" onclick="mouseclick()">Send</button>
+                        <button type="reset" class="buttonstyle" onclick="resetClick()">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer class="footerstyle">
+        <div id="footer-left">
+            <p>Designed by <a>MAI XUAN DUY</a></p>
+        </div>
+        <div>
+            <a href="#"><img src="pic/fbicon.png"></a>
+            <a href="#"><img src="pic/ggicon.png"></a>
+            <a href="#"><img src="pic/instaicon.jpg"></a>
+            <a href="#"><img src="pic/1icon.gif"></a>
+        </div>
+        <div id="footer-right">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="rq1.js"></script>
+</div>
+</body>
+</html>

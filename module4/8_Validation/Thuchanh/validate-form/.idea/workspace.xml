@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4abe81d-72e5-4089-880e-cd847fc6808c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/classes/controllers/MailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/classes/dao/MailDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/classes/model/MailSetting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-aop-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-beans-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-context-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-core-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-expression-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-jcl-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-web-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/lib/spring-webmvc-5.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/views/setting.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/views/show_infor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/ROOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/java/cg/wbd/grandemonstration/service/impl/SimpleCustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/webapp/WEB-INF/templates/customers/info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/Thuchanh/cms/src/main/webapp/WEB-INF/templates/customers/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5_JPA/cms.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\codegym\module4\8_Validation\Thuchanh\validate-form\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pn8KqMfgXv9J5RyQoqhrpFsrIP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../custom-validate" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="custom-validate" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="custom-validate" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4abe81d-72e5-4089-880e-cd847fc6808c" name="Default Changelist" comment="" />
+      <created>1615807432298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615807432298</updated>
+      <workItem from="1615807440611" duration="108000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1615807547662">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615807547662" />
+  </component>
+</project>

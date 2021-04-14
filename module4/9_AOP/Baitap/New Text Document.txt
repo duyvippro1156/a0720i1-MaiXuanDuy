@@ -1,0 +1,2 @@
+Bổ sung tính năng lọc từ xấu: có một danh sách các từ ngữ xấu. Nếu trong feedback có chứa một trong các từ này thì không cho phép feedback mà hiện ra trang báo lỗi.
+Sử dụng Spring AOP để ghi log các thông báo lỗi xấu, ghi rõ, author, nội dung feedback, ngày giờ feedback vào log.

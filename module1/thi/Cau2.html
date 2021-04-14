@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("nhập số thứ nhất"));
+    let num2 = parseInt(prompt("nhập số thứ hai"));
+    function sothanthiet(a,b) {
+        let sum1=0;
+        let sum2=0;
+        for(let i =1; i<a; i++){
+            if(a%i==0){
+                sum1+=i;
+            }
+        }
+        for(let j=1; j<b; j++){
+            if(b%j==0){
+                sum2+=j;
+            }
+        }
+        console.log(sum1);
+        console.log(sum2);
+        if(a==sum2 && b==sum1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    if(sothanthiet(num1,num2)){
+        alert("2 số là số thân thiết!");
+    }else {
+        alert("2 số không là số thân thiết!");
+    }
+</script>
+</body>
+</html>

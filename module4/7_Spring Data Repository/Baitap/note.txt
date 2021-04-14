@@ -1,0 +1,1 @@
+Clone dự án Bức ảnh của ngày đã thực hiện bằng Hibernate, push lên một repository mới. Sau đó tiến hành nâng cấp, đồng thời bổ sung tính năng phân trang để xem comment.

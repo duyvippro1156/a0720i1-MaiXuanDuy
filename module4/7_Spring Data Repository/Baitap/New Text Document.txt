@@ -1,0 +1,23 @@
+
+ModelAndView modelAndView = new ModelAndView("index");
+        Page<Blog> blogPage;
+        sortDirection = sortDirection == null ? "desc" : sortDirection;
+        Sort sort = sortDirection.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by("createdTime").ascending() : Sort.by("createdTime").descending();
+        Pageable pageableSort = PageRequest.of(page, 3, sort);
+        if (id == 0) {
+            blogPage = blogService.findAll(pageableSort);
+            modelAndView.addObject("blogs", blogPage);
+        } else {
+            blogPage = blogService.findAllByCategory(id, pageableSort);
+            modelAndView.addObject("blogs", blogPage);
+            modelAndView.addObject("id", id);
+        }
+        modelAndView.addObject("sortDirection", sortDirection);
+        if(s != null){
+            blogPage = blogService.findAllByTitleContaining(s, pageableSort);
+        } else {
+            blogPage = blogService.findAll(pageableSort);
+        }
+        modelAndView.addObject("blogs", blogPage);
+        modelAndView.addObject("s", s);
+        return modelAndView;

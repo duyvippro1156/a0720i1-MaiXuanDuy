@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <style>
+        input{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="number1">
+    <input type="text" id="number2"><br/>
+    <button onclick="calculate('+')">Addition(+)</button>
+    <button onclick="calculate('-')">Subtraction(-)</button>
+    <button onclick="calculate('*')">Multiplication(*)</button>
+    <button onclick="calculate('/')">Division(/)</button>
+    <p id="result"></p>
+<script>
+    function calculate(operator) {
+        let num1 = document.getElementById("number1");
+        let num2 = document.getElementById("number2");
+        let ketqua = 0;
+        switch (operator) {
+            case '+': {
+                ketqua = parseFloat(num1.value)+parseFloat(num2.value);
+                break;
+            }
+            case '-':{
+                ketqua = parseFloat(num1.value)-parseFloat(num2.value);
+                break;
+            }
+            case '*':{
+                ketqua = parseFloat(num1.value)*parseFloat(num2.value);
+                break;
+            }
+            case '/': {
+                ketqua = parseFloat(num1.value) / parseFloat(num2.value);
+                break;
+            }
+        }
+        document.getElementById("result").innerHTML="Result:    " + rs;
+    }
+</script>
+</body>
+</html>

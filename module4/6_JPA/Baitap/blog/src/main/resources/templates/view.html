@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View detail blog</title>
+</head>
+<body>
+    <div class="content-div">
+        <h4 th:text="${blog.title}"></h4>
+        <p> <lable>Author: </lable>
+            <span th:text="${blog.author}"></span>
+            <label>     Posted: </label>
+            <span th:text="${blog.createdTime}"></span>
+        </p>
+        <hr>
+        <pre th:utext="${blog.content}"></pre>
+
+        <a class="btn btn-outline-secondary" th:href="@{/}">Back to list</a>
+    </div>
+</body>
+</html>

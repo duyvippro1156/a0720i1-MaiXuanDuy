@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+
+#main {
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 100px;
+
+    border: 1px solid #CDCDCD;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+#logo {
+    width: 10%;
+    justify-content: flex-start;
+    background-color: #F5ed00;
+}
+
+#banner {
+    width: 90%;
+    justify-content: flex-end;
+    background-color: red;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 70px;
+}
+
+#search {
+    padding-top: 5px;
+}
+
+#head-link {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 10px;
+    padding-right: 10px;
+    border: 1px solid #CDCDCD;
+    background-color: #F5F5F5;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    min-height: 400px;
+    border: 1px solid #CDCDCD;
+    float: left;
+    margin-bottom: 5px;
+}
+
+#list {
+    background-color: #004C00;
+    height: 125px;
+}
+
+#list ul {
+    list-style: none;
+}
+
+#null-list {
+    height: 275px;
+    background-color: #F5ed00;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-height: 400px;
+    border: 1px solid #CDCDCD;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#news{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: blue;
+}
+#hot-new{
+    width: 50%;
+    background-color: darkgoldenrod;
+}
+#photo{
+    width: 50%;
+    background-color: tomato;
+}
+#list-news{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.new{
+    width: 200px;
+    height: 150px;
+}
+
+.new1{
+    background-color: #004C00;
+}
+.new2{
+    background-color: aqua;
+}
+.new3{
+    background-color: blueviolet;
+}
+.new4{
+    background-color: brown;
+}
+.new5{
+    background-color: crimson;
+}
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    min-height: 400px;
+    border: 1px solid #CDCDCD;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#calendar{
+    height: 130px;
+    background-color: darkgoldenrod;
+}
+
+#chart{
+    height: 130px;
+    background-color: aquamarine;
+}
+#maps{
+    height: 140px;
+    background-color: crimson;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    background-color: #F8F8FF;
+}

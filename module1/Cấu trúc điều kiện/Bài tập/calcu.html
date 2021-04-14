@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .myButton {
+            background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+            background-color:#ededed;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#777777;
+            font-family:Arial;
+            font-size:13px;
+            font-weight:bold;
+            padding:6px 15px;
+            text-decoration:none;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+            background-color:#dfdfdf;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+        button{
+            height: 30px;
+            width: 40px;
+        }
+        table{
+            border:1px solid black;
+        }
+        body{
+            width: 60%;
+            margin: 100px 500px;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tr>
+            <td colspan="4"><input type="text" id="ketqua"></td>
+        </tr>
+        <tr>
+            <td><button class="myButton" onclick="nhap('1')">1</button></td>
+            <td><button class="myButton" onclick="nhap('2')">2</button></td>
+            <td><button class="myButton" onclick="nhap('3')">3</button></td>
+            <td><button class="myButton" onclick="nhap('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="myButton" onclick="nhap('4')">4</button></td>
+            <td><button class="myButton" onclick="nhap('5')">5</button></td>
+            <td><button class="myButton" onclick="nhap('6')">6</button></td>
+            <td><button class="myButton" onclick="nhap('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="myButton" onclick="nhap('7')">7</button></td>
+            <td><button class="myButton" onclick="nhap('8')">7</button></td>
+            <td><button class="myButton" onclick="nhap('9')">9</button></td>
+            <td><button class="myButton" onclick="nhap('x')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="myButton" onclick="xoaGiaTri()">C</button></td>
+            <td><button class="myButton" onclick="nhap('0')">0</button></td>
+            <td><button class="myButton" onclick="tinhToan()">=</button></td>
+            <td><button class="myButton" onclick="nhap('/')">/</button></td>
+        </tr>
+    </table>
+    <script>
+        let ketqua = document.getElementById("ketqua");
+        function nhap(so) {
+            ketqua.value = ketqua.value + so;
+        }
+        function tinhToan() {
+            ketqua.value = eval(ketqua.value);
+        }
+        function xoaGiaTri() {
+            ketqua.value = "";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Eng = ["people", "history", "way", "art", "world", "information", "map", "two", "family", "government", "health",
+        "system", "computer", "meat", "year", "thanks", "music", "person", "reading", "method", "data", "food", "understanding",
+        "theory", "law", "bird", "literature", "problem", "software", "control"];
+    let Vi = ["Người", "Lịch sử", "Đường", "Nghệ thuật", "Thế giới", "Thông tin", "Bản đồ", "Hai", "Gia đình", "Chính phủ", "Sức khỏe",
+        "Hệ thống", "Máy tính", "Thịt", "Năm", "Lời cảm ơn", "Âm nhạc", "Người", "Cách đọc", "Phương pháp", "Dữ liệu", "Thức ăn", "Hiểu biết",
+        "Lý thuyết", "Pháp luật", "Chim", "Văn chương", "Vấn đề", "Phần mềm", "Kiểm soát"];
+    let text = prompt("Nhập từ tiếng việt cần tra: ");
+        if (Vi.indexOf(text) !== -1) {
+            document.write(text + " = " + Eng[Vi.indexOf(text)])
+        } else {
+            alert("Tu ban nhap khong co")
+        }
+</script>
+</body>
+</html>

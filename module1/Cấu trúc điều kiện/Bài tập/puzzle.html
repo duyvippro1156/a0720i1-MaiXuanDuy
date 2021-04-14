@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pz{
+            display: flex;
+            flex-flow: column;
+        }
+        img{
+            margin: 2px 2px;
+            height: 150px;
+        }
+        body{
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="pz">
+        <img src="picture/cat1.jpg" id="picA" onclick="onchangeImage(1)" ><br/>
+        <img src="picture/cat2.jpg" id="picB" onclick="onchangeImage(2)" ><br/>
+        <img src="picture/cat3.jpg" id="picC" onclick="onchangeImage(3)"><br/>
+        <img src="picture/cat4.jpg" id="picD" onclick="onchangeImage(4)" ><br/>
+        <img src="picture/cat5.jpg" id="picE" onclick="onchangeImage(5)" ><br/>
+    </div>
+    <script>
+        let picA=document.getElementById("picA");
+        let picB=document.getElementById("picB");
+        let picC=document.getElementById("picC");
+        let picD=document.getElementById("picD");
+        let picE=document.getElementById("picE");
+
+        function onchangeImage(number) {
+            switch (number) {
+                case 1 : {
+                    if(picA.getAttribute('src') ==="picture/cat1.jpg") {
+                        picA.src = "picture/monkey1.jpg";
+                    } else if(picA.getAttribute('src') ==="picture/monkey1.jpg") {
+                        picA.src = "picture/panda1.jpg";
+                    }  else if(picA.getAttribute('src') ==="picture/panda1.jpg") {
+                        picA.src = "picture/cat1.jpg";
+                    }
+                    break;
+                }
+                case 2 : {
+                    if(picB.getAttribute('src') ==="picture/cat2.jpg") {
+                        picB.src = "picture/monkey2.jpg";
+                    } else if(picB.getAttribute('src') ==="picture/monkey2.jpg") {
+                        picB.src = "picture/panda2.jpg";
+                    }  else if(picB.getAttribute('src') ==="picture/panda2.jpg") {
+                        picB.src = "picture/cat2.jpg";
+                    }
+                    break;
+                }
+                case 3 : {
+                    if(picC.getAttribute('src') ==="picture/cat3.jpg") {
+                        picC.src = "picture/monkey3.jpg";
+                    } else if(picC.getAttribute('src') ==="picture/monkey3.jpg") {
+                        picC.src = "picture/panda3.jpg";
+                    }  else if(picC.getAttribute('src') ==="picture/panda3.jpg") {
+                        picC.src = "picture/cat3.jpg";
+                    }
+                    break;
+                }
+                case 4 : {
+                    if(picD.getAttribute('src') ==="picture/cat4.jpg") {
+                        picD.src = "picture/monkey4.jpg";
+                    } else if(picD.getAttribute('src') ==="picture/monkey4.jpg") {
+                        picD.src = "picture/panda4.jpg";
+                    }  else if(picD.getAttribute('src') ==="picture/panda4.jpg") {
+                        picD.src = "picture/cat4.jpg";
+                    }
+                    break;
+                }
+                case 5 : {
+                    if(picE.getAttribute('src') ==="picture/cat5.jpg") {
+                        picE.src = "picture/monkey5.jpg";
+                    } else if(picE.getAttribute('src') ==="picture/monkey5.jpg") {
+                        picE.src = "picture/panda5.jpg";
+                    }  else if(picE.getAttribute('src') ==="picture/panda5.jpg") {
+                        picE.src = "picture/cat5.jpg";
+                    }
+                    break;
+                }
+            }
+            checkImage();
+        }
+        function checkImage() {
+            if(picA.getAttribute('src') ==="picture/cat1.jpg"
+                && picB.getAttribute('src') ==="picture/cat2.jpg"
+                && picC.getAttribute('src') ==="picture/cat3.jpg"
+                && picD.getAttribute('src') ==="picture/cat4.jpg"
+                && picE.getAttribute('src') ==="picture/cat5.jpg") {
+                document.getElementById("pz").style.boxShadow = '0 0 3px 3px green';
+                return;
+            }
+            else if (picA.getAttribute('src') ==="picture/monkey1.jpg"
+                && picB.getAttribute('src') ==="picture/monkey2.jpg"
+                && picC.getAttribute('src') ==="picture/monkey3.jpg"
+                && picD.getAttribute('src') ==="picture/monkey4.jpg"
+                && picE.getAttribute('src') ==="picture/monkey5.jpg"){
+                document.getElementById("pz").style.boxShadow = '0 0 3px 3px green';
+                return;
+            }
+            else if (picA.getAttribute('src') ==="picture/panda1.jpg"
+                && picB.getAttribute('src') ==="picture/panda2.jpg"
+                && picC.getAttribute('src') ==="picture/panda3.jpg"
+                && picD.getAttribute('src') ==="picture/panda4.jpg"
+                && picE.getAttribute('src') ==="picture/panda5.jpg"){
+                document.getElementById("pz").style.boxShadow = '0 0 3px 3px green';
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

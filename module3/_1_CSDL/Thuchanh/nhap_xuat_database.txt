@@ -1,0 +1,2 @@
+Nhập: Tạo database mới - chọn database bên Schemas(double click) - Server -> Data Import
+Xuất: Chọn database bên Schemas(double click) - Server -> Data Export

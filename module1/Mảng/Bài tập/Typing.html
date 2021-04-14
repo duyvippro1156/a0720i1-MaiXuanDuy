@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Type anthing slowly</h2>
+<form name="f">
+    <textarea name="txt" cols="50" rows="10" onkeydown="typeTextarea();"></textarea>
+</form>
+<script>
+    let a=new Array(), n="";
+    a[1]='C';a[2]='H';a[3]='Ắ';a[4]='C';a[5]=' ';a[6]='A';a[7]='N';a[8]='H';a[9]=' ';a[10]='C';a[11]='H';a[12]='I';a[13]='Ề';
+    a[14]='U';a[15]=' ';a[16]='E';a[17]='M';a[18]=' ';a[19]='Q';a[20]='U';a[21]='Á';a[22]=' ';a[23]='N';a[24]='Ê';a[25]='N';
+    a[26]=' ';a[27]='E';a[28]='M';a[29]=' ';a[30]='H';a[31]='Ư';a[32]=' ';a[33]='Đ';a[34]='Ú';a[35]='N';a[36]='G';a[37]=' ';
+    a[38]='K';a[39]='H';a[40]='Ô';a[41]='N';a[42]='G';a[43]='!';a[44]='!';
+    function typeTextarea(){
+        t =  document.f.txt.value;
+        j = t.length;
+        if(j > 0)
+        {
+            for(let i=1; i<=j; i++)
+            {
+                n = n + a[i];
+                if(i == 44)
+                {
+                    document.f.txt.value = "";
+                    n = "";
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n="";
+        setTimeout("typeTextarea()", 1);
+        //return false;
+    }
+</script>
+</body>
+</html>

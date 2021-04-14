@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 120px;
+            height: 50px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Quản lý sách</h1>
+<table id="tb">
+    <tr>
+        <td>Mã số sách</td>
+        <td>Tên sách</td>
+        <td>Năm xuất bản</td>
+        <td>Số quyển</td>
+        <td>Tình trạng</td>
+    </tr>
+</table>
+<button type="button" onclick="them()">Thêm sách đã có</button>
+<button type="button" onclick="themmoi()">Thêm sách mới</button>
+<button type="button" onclick="muon()">Mượn</button>
+<button type="button" onclick="hienthi()">Hiển thị sách</button>
+<script>
+    class Sach {
+        constructor(maSoSach, tenSach, namXuatBan, soQuyen, tinhTrang) {
+            this.maSoSach = maSoSach;
+            this.tenSach = tenSach;
+            this.namXuatBan = namXuatBan;
+            this.soQuyen = soQuyen;
+            this.tinhTrang = tinhTrang;
+        }
+        getMaSoSach(){
+            this.maSoSach = maSoSach;
+        }
+        setMaSoSach(){
+            return this.maSoSach;
+        }
+        getTenSach(){
+            this.tenSach = tenSach;
+        }
+        setTenSach(){
+            return this.tenSach;
+        }
+        getNamXuatBan(){
+            this.namXuatBan = namXuatBan;
+        }
+        setNamXuatBan(){
+            return this.namXuatBan;
+        }
+        getSoQuyen(){
+            this.soQuyen = soQuyen;
+        }
+        setSoQuyen(){
+            return this.soQuyen;
+        }
+        xemTinhTrang() {
+            return this.tinhTrang;
+        }
+
+        them() {
+
+        }
+
+        themmoi() {
+
+        }
+
+        muon() {
+            if (this.xemTinhTrang() == true) {
+                this.soQuyen = this.soQuyen - 1;
+                if (this.soQuyen == 0) {
+                    this.tinhTrang = false;
+                }
+            } else {
+                alert("sách hết số lượng")
+            }
+        }
+
+        hienthi() {
+            document.write("<tr>");
+            document.write("<td>"+this.getMaSoSach()+"</td>");
+            document.write("<td>"+this.getTenSach()+"</td>");
+            document.write("<td>"+this.getNamXuatBan()+"</td>");
+            document.write("<td>"+this.getSoQuyen()+"</td>");
+            document.write("<td>"+this.xemTinhTrang()+"</td>");
+            document.write("</tr>");
+        }
+    }
+</script>
+</body>
+</html>

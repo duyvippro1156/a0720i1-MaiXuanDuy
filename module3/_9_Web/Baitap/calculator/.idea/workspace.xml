@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="calculator:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd9bd5fd-24c6-4abd-9d80-3948ede6dbaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Báo cáo tuần và tài liệu/CodeGym-A0720I1-Mai Xuân Duy_31122020 - Copy.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Báo cáo tuần và tài liệu/Demo.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/out/artifacts/CustomerManagement_war_exploded/WEB-INF/classes/quanlykhachhang/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/out/artifacts/CustomerManagement_war_exploded/WEB-INF/classes/quanlykhachhang/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/out/production/CustomerManagement/quanlykhachhang/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/out/production/CustomerManagement/quanlykhachhang/controller/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/src/quanlykhachhang/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/CustomerManagement/src/quanlykhachhang/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/artifacts/QuanLyKhachHang_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/QuanLyKhachHang.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/classes/quanlykhachhang/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/classes/quanlykhachhang/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/classes/quanlykhachhang/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/classes/quanlykhachhang/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/jsp/customer/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/jsp/customer/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/jsp/customer/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/jsp/customer/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/artifacts/QuanLyKhachHang_war_exploded/jsp/customer/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/production/QuanLyKhachHang/quanlykhachhang/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/production/QuanLyKhachHang/quanlykhachhang/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/production/QuanLyKhachHang/quanlykhachhang/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/out/production/QuanLyKhachHang/quanlykhachhang/service/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/src/quanlykhachhang/controller/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/src/quanlykhachhang/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/src/quanlykhachhang/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/src/quanlykhachhang/service/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/error-404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/jsp/customer/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/jsp/customer/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/jsp/customer/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/jsp/customer/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../_11_MVC/Thuchanh/QuanLyKhachHang/web/jsp/customer/view.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\codegym\module3\_9_Web\Baitap\calculator\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1mxxEnRIdjjCKcbvkz8yLaX0Ppn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Báo cáo tuần và tài liệu/jstl-1.2.jar!/" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.61" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.61" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="calculator:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/calculator_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_61_calculator_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="calculator:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd9bd5fd-24c6-4abd-9d80-3948ede6dbaa" name="Default Changelist" comment="" />
+      <created>1610448933266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610448933266</updated>
+      <workItem from="1610448939260" duration="473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Project_Structure" timestamp="1610449069661">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1610449069661" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1610449385170">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610449385170" />
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1610449413833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610449413833" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1610449413833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610449413833" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1610449413833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610449413833" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1610449413833">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610449413833" />
+    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1610449413835">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610449413835" />
+    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1610449413834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1610449413834" />
+    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1610449413835">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1610449413835" />
+    <state x="65" y="0" key="new project wizard" timestamp="1610449408949">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1610449408949" />
+  </component>
+</project>

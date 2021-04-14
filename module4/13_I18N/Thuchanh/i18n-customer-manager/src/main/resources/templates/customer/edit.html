@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{edit.title_}"></title>
+</head>
+<body>
+Language: <a href="?lang=en">English</a> | <a href="?lang=vi_VN">Viet Nam</a>
+<h1 th:text="#{edit.heading}"></h1>
+<p>
+    <a href="/" th:text="#{edit.list_customer}"></a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/edit-customer}" th:object="${customer}" method="post">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td th:text="#{edit.first_name}">:</td>
+            <td><input type="text" th:field="*{firstName}"/></td>
+        </tr>
+        <tr>
+            <td th:text="#{edit.last_name}">:</td>
+            <td><input type="text" th:field="*{lastName}"/></td>
+        </tr>
+        <tr>
+            <td th:text="#{edit.email}">:</td>
+            <td><input type="text" th:field="*{email}"/></td>
+        </tr>
+        <tr>
+            <td th:text="#{edit.province_of_customer}">:</td>
+            <td>
+                <select name="province">
+                    <option th:each="p : ${provinces}"
+                            th:value="${p.id}"
+                            th:text="${p.name}"
+                            th:selected="(${p.id} == *{province.id})"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" th:value="#{edit.submit_label}"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

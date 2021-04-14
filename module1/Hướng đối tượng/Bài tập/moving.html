@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onkeydown="startgame.moveObject(event)">
+    <canvas id="Board" width="1000px" height="500px" border = 1></canvas>
+<script>
+    const LEFT = "left";
+    const RIGHT = "right";
+    const UP = "up";
+    const DOWN = "down";
+    class GameObject {
+        constructor(xPos, yPos, orientation, speed, image) {
+            this.xPos = xPos;
+            this.yPos = yPos;
+            this.orientation = orientation;
+            this.speed = speed;
+            this.image = image;
+        }
+        move(){
+            let img = new Image();
+            img.src = this.image;
+            switch (this.orientation) {
+                case LEFT:{
+                    if (this.xPos >= 0){
+                        this.xPos -= this.speed;
+                    }
+                    break
+                }
+                case RIGHT: {
+                    if (this.xPos <= 1000 - img.width){
+                        this.xPos += this.speed;
+                    }
+                    break
+                }
+                case UP: {
+                    if (this.yPos >= 0){
+                        this.yPos -= this.speed;
+                    }
+                    break
+                }
+                case DOWN: {
+                    if (this.yPos <= 500-img.height){
+                        this.yPos += this.speed;
+                    }
+                    break
+                }
+            }
+        }
+    }
+    class GamePlay {
+        constructor(object, ctx){
+            this.object = object;
+            this.ctx = ctx;
+        }
+        render(){
+            let img = new Image();
+            img.src = this.object.image;
+            this.ctx.drawImage(img, this.object.xPos, this.object.yPos);
+        }
+        moveObject(event){
+            let add = 0;
+            switch (event.keyCode) {
+                case 37: {
+                    add = LEFT;
+                    break
+                }
+                case 38: {
+                    add = UP;
+                    break
+                }
+                case 39: {
+                    add = RIGHT;
+                    break
+                }
+                case 40: {
+                    add = DOWN;
+                    break
+                }
+            }
+            if (this.object.orientation !== add){
+                this.object.orientation = add
+            } else {
+                this.object.move()
+            }
+            this.ctx.clearRect(0,0,1000,500);
+            this.render()
+        }
+    }
+    let ctx = document.getElementById("Board").getContext("2d");
+    let doraemon = new GameObject(0,0,"left",20,"picture/doraemon.jpg");
+    let startgame = new GamePlay(doraemon, ctx);
+</script>
+</body>
+</html>

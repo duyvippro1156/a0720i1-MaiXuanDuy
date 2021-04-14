@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{list.title_}"></title>
+</head>
+<body>
+Language: <a href="?lang=en">English</a> | <a href="?lang=vi_VN">Viet Nam</a></br>
+<a href="/create-customer" th:text="#{list.create_new_customer}"></a>
+<a href="/create-province" th:text="#{list.create_new_province}"></a><br>
+<h1 th:text="#{list.heading}"></h1>
+<table border="1">
+    <tr>
+        <th th:text="#{list.first_name}"></th>
+        <th th:text="#{list.last_name}"></th>
+        <th th:text="#{list.email}"></th>
+        <th th:text="#{list.province_of_customer}"></th>
+        <th th:text="#{list.edit}"></th>
+        <th th:text="#{list.delete}"></th>
+    </tr>
+    <th:block th:each="customer : ${customers}">
+        <tr>
+            <td th:text="${customer.firstName}"></td>
+            <td th:text="${customer.lastName}"></td>
+            <td th:text="${customer.email}"></td>
+            <td th:text="${customer.province.name}"></td>
+            <td><a th:href="@{/edit-customer/__${customer.id}__ }" th:text="#{list.edit}"></a></td>
+            <td><a th:href="@{/delete-customer/__${customer.id}__ }" th:text="#{list.delete}"></a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

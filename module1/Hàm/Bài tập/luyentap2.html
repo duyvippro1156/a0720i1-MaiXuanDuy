@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span> Nhập bài tập cần kiểm tra: </span>
+    <input type="text" id="bai">
+    <button type="button" onclick="baitap()">Thực hiện</button><br/>
+    <br/>
+    <span>Danh sách bài tập: </span><br>
+    <p><span>Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</span></p>
+    <p><span>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được </span></p>
+    <p><span>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</span></p>
+    <p><span>Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.</span></p>
+    <p><span>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</span></p>
+    <p><span>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.</span></p>
+    <p><span>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</span></p>
+    <p><span>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</span></p>
+    <p><span>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </span></p>
+    <hr/>
+    <p id="result"></p>
+</body>
+<script>
+    let request = document.getElementById("bai");
+    function baitap() {
+        switch (request.value) {
+            case '1':
+                square();
+                break;
+            case '2':
+                circleAreaAndPerimeter();
+                break;
+            case '3':
+                factorial();
+                break;
+            case '4':
+                checkNumber();
+                break;
+            case '5':
+                minNumber();
+                break;
+            case '6':
+                positiveIntegers();
+                break;
+            case '7':
+                changePlaces();
+                break;
+            case '8':
+                revertArray();
+                let bai8 = "<input type='text' id='txtValue'>";
+                bai8 += "<input type='button' value='Add' id='btnAdd' onclick='addElementToArray()'/>";
+                bai8 += "<input type='button' value='Reserve' id='btnReserve' onclick='reserveArray()'/>";
+                document.getElementById("result").innerHTML=bai8;
+                break;
+            case '9':
+                checkCharacterOfArray();
+                let bai9 = "<input type='text' id='txtValue' placeholder='Nhập số'/>";
+                bai9 += "<input type='text' id='Check' placeholder='kiểm tra số'/>";
+                bai9 += "<input type='button' value='Add' onclick='addElement()'/>";
+                bai9 += "<input type='button' value='check' onclick='checkArray()'/>";
+                document.getElementById("result").innerHTML=bai9;
+                break;
+            default:
+                alert("Nhập vào số từ 1-9")
+        }
+        function square(){
+            let numAdd=parseInt(prompt("nhập số vào: "));
+            function square(num) {
+                result=num*num;
+                return result;
+            }
+            alert(square(numAdd));
+        }
+        function circleAreaAndPerimeter() {
+            let radiusAdd=parseInt(prompt("nhập vào bán kính đường tròn"));
+            const PI=3.14;
+            function acreage(radius) {
+                Acreage=PI*PI*radius;
+                return Acreage;
+            }
+            function perimeter(radius) {
+                Perimeter=2*PI*radius;
+                return Perimeter;
+            }
+            alert("diện tích hình tròn là: "+acreage(radiusAdd));
+            alert("chu vi hình tròn là: "+perimeter(radiusAdd));
+        }
+
+        function cactorial() {
+            let numAdd=parseInt(prompt("nhập vào số cần tính giai thừa"));
+            function factorial(number) {
+                for(result=1;number>=1;number--) {
+                    result=result*number;
+                };
+                return result;
+            }
+            alert("giai thừa của số vừa nhập là "+factorial(numAdd));
+        }
+
+        function checkNumber(){
+            let input=prompt("nhập vào ký tự cần kiểm tra");
+            function checkNumber(num) {
+                let result="";
+                if(isNaN(num)) {
+                    result="False";
+                    return result;
+                } else {
+                    result="True";
+                    return result;
+                }
+            }
+            alert("Số cần kiểm tra là số True/False: "+checkNumber(input));
+        }
+        
+        function minNumber() {
+            let num1=parseInt(prompt("nhập vào số thứ 1"));
+            let num2=parseInt(prompt("nhập vào số thứ 2"));
+            let num3=parseInt(prompt("nhập vào số thứ 3"));
+
+            function findMax(first,second,third) {
+                if( first>=second && first>=third) {
+                    alert("số lớn nhất là "+ first);
+                } else if( second>=first && second>=third) {
+                    alert("số lớn nhất là "+ second);
+                } else {
+                    alert("số lớn nhất là "+ third);
+                }
+            }
+
+            alert(findMax(num1,num2,num3));
+        }
+        
+        function positiveIntegers() {
+            let numAdd=parseInt(prompt("nhập vào số cần kiểm tra"));
+            function checkStatus(num) {
+                if(num>=0) {
+                    return "True";
+                } else
+                    return "False";
+            }
+            alert("số nhập vào là số dương True/False :"+ checkStatus(numAdd));
+        }
+
+        function changePlaces() {
+            let num1=prompt("Nhập số thứ nhất");
+            let num2=prompt("Nhập số thứ hai");
+
+            function change(first,second) {
+                result= second+" , "+first;
+                return result;
+            }
+            alert(change(num1,num2));
+        }
+        
+        function revertArray() {
+            let x=0;
+            let array=Array();
+            function addElementToArray() {
+                array[x]=document.getElementById("txtValue").value;
+                alert("Element:" + array[x]+" Add at index "+ x);
+                x++;
+            }
+            function reserveArray() {
+                ReverseArray=array.reverse();
+                document.getElementById("result").innerHTML=ReverseArray;
+            }
+        }
+
+        function checkCharacterOfArray() {
+            let x=0;
+            let array=Array();
+            function addElement() {
+                array[x]=document.getElementById("txtValue").value;
+                alert(" Nhập vào là "+array[x]+" tại vị trí "+ x);
+                x++;
+            }
+
+            function checkArray() {
+                numberCheck=document.getElementById("Check").value;
+                count=0;
+                for(i=0;i<array.length;i++) {
+                    if( array[i]==numberCheck) {
+                        count=count+1;
+                    }
+                }
+                if(count>0) {
+                    alert("so "+numberCheck+" có xuất hiện trong mảng với số lần xuất hiện là "+count+ " lần.")
+                } else {
+                    alert(numberCheck + "  không xuất hiện trong mảng:")
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

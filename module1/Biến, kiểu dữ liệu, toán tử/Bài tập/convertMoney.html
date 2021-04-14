@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <td>Amount</td>
+                <td>FromCurency</td>
+                <td>ToCurency</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="input"></td>
+                <td><select id="fromcurency">
+                    <option>VND</option>
+                    <option>USD</option>
+                </select></td>
+                <td><select id="tocurency">
+                    <option>VND</option>
+                    <option>USD</option>
+                </select></td>
+            </tr>
+        </table>
+        <button onclick="convertMoney()">Submit</button>
+        <p id="result"></p>
+<script>
+    function convertMoney() {
+        let result = 0;
+        let money = document.getElementById("input");
+        if (isNaN(money.value) || money.value <0) {
+            result = "Bạn đã nhập số tiền không đúng"
+        } else {
+            let fromCurrency = document.getElementById("fromcurency");
+            let toCurrency = document.getElementById("tocurency");
+            if (fromCurrency.value === "USD" && toCurrency.value === "VND") {
+                result = money.value * 23000 + " VND";
+            } else if (fromCurrency.value === "VND" && toCurrency.value === "USD") {
+                result = money.value / 23000 + " $";
+            } else {
+                result = "Mời bạn nhập lại"
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
