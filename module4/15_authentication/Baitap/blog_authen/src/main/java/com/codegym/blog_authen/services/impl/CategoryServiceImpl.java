@@ -1,9 +1,9 @@
-package com.codegym.blog_security.services.impl;
+package com.codegym.blog_authen.services.impl;
 
 
-import com.codegym.blog_security.models.Category;
-import com.codegym.blog_security.repositories.CategoryRepository;
-import com.codegym.blog_security.services.CategoryService;
+import com.codegym.blog_authen.models.Category;
+import com.codegym.blog_authen.repositories.CategoryRepository;
+import com.codegym.blog_authen.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

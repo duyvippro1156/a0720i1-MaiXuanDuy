@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a th:href="@{/cart}">Xem giỏ hàng</a>
+    </div>
+    <div th:if="${products != null}">
+        <th:block th:each="product : ${products}">
+            <a th:href="@{/view(id=${product.id})}">
+                <img th:src="${product.imageUrl}">
+                <div>
+                    <h5 th:text="${product.name}"></h5>
+                    <div>
+                        <h6><span>Giá: </span><span th:text="${#numbers.formatDecimal(product.price, 0, 'POINT', 0, 'COMMA')}"></span></h6>
+                    </div>
+                </div>
+            </a>
+        </th:block>
+    </div>
+</div>
+
+</body>
+</html>

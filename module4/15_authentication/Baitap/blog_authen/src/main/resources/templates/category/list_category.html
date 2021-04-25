@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List Category</title>
+</head>
+<body>
+<div sec:authorize="isAuthenticated()">
+    <a th:href="@{/}">Home</a> | <a th:href="@{/logout}">Logout</a>
+</div>
+<a th:href="@{/category/create}">Create Category</a>
+<table>
+    <thead>
+    <tr th:each="category, categoryStat : ${categories}">
+        <td th:text="${category.id}"></td>
+        <td th:text="${category.name}"></td>
+        <td><a th:href="@{/{id}/category/edit(id=${category.id})}">Edit</a></td>
+        <td><a th:href="@{/{id}/category/delete(id=${category.id})}">Delete</a></td>
+    </tr>
+    </thead>
+</table>
+<a th:href="@{/}">Back to list blog</a>
+</body>
+</html>

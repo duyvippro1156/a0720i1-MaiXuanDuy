@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Category</title>
+</head>
+<body>
+<div sec:authorize="isAuthenticated()">
+    <a th:href="@{/}">Home</a> | <a th:href="@{/logout}">Logout</a>
+</div>
+    <form th:action="@{/category/save}" th:method="post" th:object="${categories}">
+        <label>
+            <input type="text" th:field="*{id}" hidden>
+        </label>
+        <div>
+            <label>Name Category:</label>
+            <label>
+                <input type="text" th:field="*{name}" required>
+            </label>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <a th:href="@{/category/list_category}">Back to list</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+    </div>
+    <th:block th:if="${products != null}">
+        <div>
+            <div>
+                <img th:src="${products.imageUrl}"  th:alt="${products.name}">
+                <div>
+                    <h5>MÃ SẢN PHẨM</h5>
+                    <h5 style="" th:text="${products.id}"></h5>
+                    <div>
+                        <h5 style="color: red">Giá: <th:block th:text="${#numbers.formatDecimal(products.price, 0, 'POINT', 0, 'COMMA')}"></th:block></h5>
+                    </div>
+                    <form th:action="@{/addCart}" method="get">
+                        <input name="id" type="text" th:value="${products.id}" hidden>
+                        <input type="number" name="quantity" min="1" value="1">
+                        <input type="submit" value="Mua ngay">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h4 th:text="${products.name}"></h4>
+
+            </div>
+        </div>
+    </th:block>
+</div>
+</body>
+</html>

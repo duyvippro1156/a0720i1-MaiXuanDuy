@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+</head>
+<body>
+<div>
+    <a th:href="@{/}">Quay lại trang chủ</a>
+</div>
+    <table>
+        <thead>
+        <tr>
+            <td>
+                <h4>GIỎ HÀNG (
+                    <th:block th:text="${cart.size()}"></th:block>
+                    sản phẩm )
+                </h4>
+            </td>
+        </tr>
+        </thead>
+        <tbody th:if="${cart != null}">
+        <tr th:each="product : ${cart}">
+            <td><img style="width: 150px" th:src="${product.key.imageUrl}"></td>
+            <td>
+                <h4 th:text="${product.key.name}"></h4>
+                <h5>Mã sản phẩm:
+                    <th:block th:text="${product.key.id}"></th:block>
+                </h5>
+                <h5>Đơn giá:
+                    <th:block th:text="${#numbers.formatDecimal(product.key.price, 0, 'POINT', 0, 'COMMA')}"></th:block>
+                </h5>
+
+                <th:block th:if="${product.key.id != id}">
+                    <h5>
+                        Số lượng:
+                        <th:block th:text="${product.getValue()}"></th:block>
+                        <a th:href="@{/cart(id=${product.getKey().getId()})}">Thay đổi</a>
+                    </h5>
+                </th:block>
+                <th:block th:if="${product.getKey().getId() == id}">
+                    <form method="get" th:action="@{/updateCart}">
+                        <input type="text" name="id" th:value="${id}" hidden>
+                        <h5>Số lượng: </h5>
+                        <input type="number" name="quantity" min="1" th:value="${product.getValue()}" required>
+                        <input type="submit" value="Lưu">
+                    </form>
+                </th:block>
+            </td>
+            <td>
+                <a th:href="@{/delete(id=${product.key.id})}">Xóa</a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h5 style="color: red">Tổng tiền: <th:block th:text="${#numbers.formatDecimal(amount, 0, 'POINT', 0, 'COMMA')}"></th:block></h5></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a  href="#">Thanh toán</a>
+                <a  th:href="@{/delete}">Xóa giỏ hàng</a>
+            </td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
