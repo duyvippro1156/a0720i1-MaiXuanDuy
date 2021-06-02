@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+   "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<!-- Convention package default -->
+	<constant name="struts.convention.default.parent.package"
+		value="default" />
+
+	<!-- Change action path extension from .action to .html -->
+	<constant name="struts.action.extension" value=",html" />
+
+	<!-- Select simple theme of Struts -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<!-- Global properties file -->
+	<constant name="struts.custom.i18n.resources" value="global" />
+
+	<!-- Interceptor -->
+	<package name="default" namespace="/" extends="struts-default">
+<!--		<interceptors>-->
+<!--			<interceptor name="authInterceptor" class="struts.Interceptor.Auth" />-->
+<!--			<interceptor-stack name="authStack">-->
+<!--				<interceptor-ref name="authInterceptor" />-->
+<!--				<interceptor-ref name="defaultStack" />-->
+<!--			</interceptor-stack>-->
+<!--		</interceptors>-->
+		<interceptors>
+			<interceptor name="authentication"
+						 class="com.journaldev.struts2.interceptors.AuthenticationInterceptor"></interceptor>
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="authentication"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="authStack"></default-interceptor-ref>
+		<global-results>
+			<result name="success" type="redirect">/admin/index.html</result>
+			<result name="login" type="redirect">/admin/login.html</result>
+		</global-results>
+
+	</package>
+</struts>

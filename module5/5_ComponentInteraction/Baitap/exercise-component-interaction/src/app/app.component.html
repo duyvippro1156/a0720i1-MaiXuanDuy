@@ -1,0 +1,25 @@
+<div class="container">
+  <!--  Countdown timer program-->
+  <!-- <app-countdown-timer [seconds]="6">
+</app-countdown-timer> -->
+
+  <!-- <app-countdown-timer-get-set seconds="abc">
+  </app-countdown-timer-get-set> -->
+
+  <!-- <app-countdown-timer-onchanges seconds="str">
+  </app-countdown-timer-onchanges> -->
+
+  <!-- <app-countdown-timer-alias remaining-time="60">
+  </app-countdown-timer-alias> -->
+
+  <!-- <app-countdown-timer-event seconds="10" (finish)="finishCountdown()">
+  </app-countdown-timer-event>
+  <p>{{ countdownMsg }}</p> -->
+
+  <app-countdown-timer-event-alias seconds="10" (timerEnd)="endCountdown()"></app-countdown-timer-event-alias>
+  <p>{{ countdownAliasMsg }}</p>
+  <hr>
+  <!--  rating bar program-->
+  <app-rating-input></app-rating-input>
+  <hr>
+</div>

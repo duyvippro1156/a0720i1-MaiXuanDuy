@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{index::head}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container-fluid px-0">
+    <div th:replace="~{/index::header}">
+        <!--        header-->
+    </div>
+    <div th:insert="~{/index::navbar}">
+    </div>
+    <div class="website-body">
+        <div th:replace="~{/index::employee-left-panel}">
+        </div>
+        <div class="main-content">
+            <!--            content-->
+            <table class="table table-striped">
+                <thead>
+                <tr class="text-center font-weight-bold">
+                    <td>ID</td>
+                    <td>Họ tên</td>
+                    <td>Ngày sinh</td>
+                    <td>Email</td>
+                    <td>Chức vụ</td>
+                    <td>Bộ phận</td>
+                    <td>Chi tiết</td>
+                    <td>Chỉnh sửa</td>
+                    <td>Xóa</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="employee : ${employees}">
+                    <td th:text="${employee.id}"></td>
+                    <td th:text="${employee.name}"></td>
+                    <td th:text="${#temporals.format(employee.birthday, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${employee.email}"></td>
+                    <td th:text="${employee.position.name}"></td>
+                    <td th:text="${employee.division.name}"></td>
+                    <td class="text-center"><a class="btn btn-info btn-sm" th:href="@{/employee/view/{id}(id=${employee.id})}">Xem</a></td>
+                    <td class="text-center"><a class="btn btn-success btn-sm" th:href="@{/employee/edit/{id}(id=${employee.id})}">Sửa</a></td>
+                    <td><a class="btn btn-danger btn-sm" th:href="@{/employee/delete/{id}(id=${employee.id})}" onclick="return confirm('Bạn muốn xóa nhân viên này không?')">Xóa</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="mr-auto ml-auto">
+                <a class="btn btn-secondary btn-sm" th:href="@{/employee(search=${search},page=${employees.number - 1})}" th:if="${employees.hasPrevious()}">Previous</a>
+                <span th:text="${employees.number + 1}"></span>/<span th:text="${employees.totalPages}"></span>
+                <a class="btn btn-secondary btn-sm" th:href="@{/employee(search=${search},page=${employees.number + 1})}" th:if="${employees.hasNext()}">Next</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

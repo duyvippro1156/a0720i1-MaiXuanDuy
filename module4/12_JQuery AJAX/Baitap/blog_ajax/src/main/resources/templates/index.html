@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h3>List Blog</h3>
+<a th:href="@{'/create'}">Create Blog</a>
+<a th:href="@{'/category/list_category'}">List Category</a>
+
+<div>
+    <form>
+        Search by title:
+        <input name="s" type="text"/>
+        <input type="submit" value="Search"/>
+    </form><br/>
+    <table>
+        <thead>
+        <tr>
+            <td>
+                <div>
+                    <a th:each="category: ${categories}" th:text="${category.name}"
+                       th:href="@{/(id=${category.id}, s=${s})}"></a>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <div>
+                        <a th:href="@{/?sortDirection=desc(id=${id}, s=${s})}">Newest</a>
+                        <a th:href="@{/?sortDirection=asc(id=${id}, s=${s})}">Oldest</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</div>
+<th:block th:if="${blogs != null} ">
+    <table>
+        <thead>
+        <tr th:each="blog, blogStat : ${blogs}">
+            <td>
+                <div>
+                    <div>
+                        <h5><a th:text="${blog.title}"
+                               th:href="@{/{id}/view(id=${blog.id})}"></a></h5>
+                        <label th:text="${blog.category.name}"></label>
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <label th:text="${blog.author}"></label>
+                        <label>     Posted on: </label>
+                        <label th:text="${blog.createdTime}"></label>
+                    </div>
+                </div>
+                <div>
+                    <p th:text="${#strings.abbreviate(blog.content,150)}"></p>
+                </div>
+            </td>
+            <td><a th:href="@{/{id}/edit(id=${blog.id})}">Edit</a></td>
+            <td><a th:href="@{/{id}/delete(id=${blog.id})}">Delete</a></td>
+        </tr>
+        </thead>
+    </table>
+</th:block>
+
+<button type="button" id="btnModalCreate">
+    Create
+</button>
+<div class="modal fade" id="modelId"  role="dialog" aria-labelledby="modelTitleId">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a th:href="@{'/'(sortDirection = ${sortDirection},id=${id}, s=${s},page=${blogs.number - 1})}" th:if="${blogs.hasPrevious()}">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:href="@{'/'(sortDirection = ${sortDirection},id=${id}, s=${s},page=${blogs.number + 1})}" th:if="${blogs.hasNext()}">Next</a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnModalCreate").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/create",
+                dataType: "HTML",
+                success: function (data) {
+                    $(".modal-body").html(data);
+                    $("#modelId").modal('show');
+                }
+            });
+        });
+        $(".edit").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/edit" + $(this).val(),
+                dataType: "HTML",
+                success: function (data) {
+                    $(".modal-body").html(data);
+                    $("#modelId").modal('show');
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>
