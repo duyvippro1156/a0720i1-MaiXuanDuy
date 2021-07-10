@@ -10,4 +10,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  select(list: string) {
+  }
 }

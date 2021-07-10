@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <title>Create</title>
+</head>
+<body>
+<div class="container">
+  <div class="title">Create</div>
+  <div class="content">
+    <form (submit) = "createStudent()" [formGroup] = "formCreate">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Mã Sinh Viên</span>
+          <input formControlName="Id" type="number" placeholder="Enter your ID" required>
+          <ng-container *ngFor="let validation of validationMessage.Id">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Id').hasError(validation.type)&&(formCreate.get('Id').dirty || formCreate.get('Id').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Tên Sinh Viên</span>
+          <input formControlName="Name" type="text" placeholder="Enter your name" required >
+          <ng-container *ngFor="let validation of validationMessage.Name">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Name').hasError(validation.type)&&(formCreate.get('Name').dirty || formCreate.get('Name').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Nhóm</span>
+          <input formControlName="Group" type="text" placeholder="Enter your group" required>
+          <ng-container *ngFor="let validation of validationMessage.Group">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Group').hasError(validation.type)&&(formCreate.get('Group').dirty || formCreate.get('Group').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Đề tài</span>
+          <input formControlName="Topic" type="text" placeholder="Enter your topic" required>
+          <ng-container *ngFor="let validation of validationMessage.Topic">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Topic').hasError(validation.type)&&(formCreate.get('Topic').dirty || formCreate.get('Topic').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Người hướng dẫn</span>
+          <input formControlName="Coach" type="text" placeholder="Enter your coach" required>
+          <ng-container *ngFor="let validation of validationMessage.Coach">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Coach').hasError(validation.type)&&(formCreate.get('Coach').dirty || formCreate.get('Coach').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input formControlName="Email" type="text" placeholder="Enter your email" required>
+          <ng-container *ngFor="let validation of validationMessage.Email">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Email').hasError(validation.type)&&(formCreate.get('Email').dirty || formCreate.get('Email').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+        <div class="input-box">
+          <span class="details">Số điện thoại</span>
+          <input formControlName="Phone" type="text" placeholder="Enter your Phone number" required>
+          <ng-container *ngFor="let validation of validationMessage.Phone">
+            <small class="form-text text-danger"
+                   *ngIf="formCreate.get('Phone').hasError(validation.type)&&(formCreate.get('Phone').dirty || formCreate.get('Phone').touched)">
+              {{validation.message}}
+            </small>
+          </ng-container>
+        </div>
+      </div>
+      <div class="button">
+        <button type="submit" >Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>

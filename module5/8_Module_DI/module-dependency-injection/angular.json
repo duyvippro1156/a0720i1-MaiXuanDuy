@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "module-dependency-injection"
+    }
+  },
+  "defaultProject": "module-dependency-injection",
+  "cli": {
+    "analytics": "b9413a8f-436b-4675-b3d6-47220b0356aa"
+  }
 }

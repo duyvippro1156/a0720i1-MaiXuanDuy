@@ -1,0 +1,40 @@
+{
+  "student": [
+    {
+      "Id": 1,
+      "Name": "Xuan Duy",
+      "Group": "1",
+      "Topic": "Ban Dien thoai",
+      "Coach": "Trung DP",
+      "Email": "maiduy@gmail.com",
+      "Phone": "0123456789"
+    },
+    {
+      "Id": 2,
+      "Name": "Xuan Duy 2",
+      "Group": "1",
+      "Topic": "Ban Dien thoai",
+      "Coach": "Trung DP",
+      "Email": "maiduy@gmail.com",
+      "Phone": "0123456789"
+    },
+    {
+      "Id": 3,
+      "Name": "Xuan Duy 3",
+      "Group": "1",
+      "Topic": "Ban Dien thoai",
+      "Coach": "Trung DP",
+      "Email": "maiduy@gmail.com",
+      "Phone": "0123456789"
+    },
+    {
+      "Id": 4,
+      "Name": "Xuan Duy 4",
+      "Group": "1",
+      "Topic": "Ban Dien thoai",
+      "Coach": "Trung DP",
+      "Email": "maiduy@gmail.com",
+      "Phone": "0123456789"
+    }
+  ]
+}
