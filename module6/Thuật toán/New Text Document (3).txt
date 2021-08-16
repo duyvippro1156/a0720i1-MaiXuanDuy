@@ -1,0 +1,38 @@
+Bài tập thuật toán về nhà:
+1. Một mảng được gọi là đẹp nếu như tất các các phần tử trong mảng đều là số lẻ hoặc đều là số chẵn. Với mỗi thao tác thì bạn có thể xóa đi một phần tử trong mảng, hãy tìm số thao tác ít nhất để chuyển mảng arr đầu vào thành một mảng đẹp.
+Ví dụ:
+Với arr = [1, 2, 3, 4, 5] thì prettyArray(arr) = 2.
+Ta sẽ xóa số 2 và 4 để mảng chỉ toàn số lẻ..
+Với arr = [2, 8, 6, 10] thì prettyArray(arr) = 0.
+Đây đã là bản đẹp sẵn.
+2. DAN đang cần đổi số tiền n đồng về tiền lẻ, biết mệnh giá các tờ tiền lẻ DAN có thể đổi được biểu diễn ở mảng arr, biết rằng có vô số tờ tiền lẻ. Tuy nhiên DAN lại không muốn cầm quá nhiều tờ tiền nên muốn đổi sao cho số tờ tiền là ít nhất. Hãy giúp DAN tìm số tờ tiền đó, nếu không thể đổi được thì hãy trả về 0.
+Ví dụ:
+Với n = 10 và arr = [1,2,3] thì minMoney = 4;
+Có rất nhiều cách đổi tiền:
+10 tờ 1 đồng.
+5 tờ 2 đồng.
+3 tờ 3 đồng và 1 tờ 1 đồng.
+3 tờ 2 đồng và 4 tờ 1 đồng.
+...
+Nhưng ta thấy cách đổi ra 3 tờ 3 đồng và 1 tờ 1 đồng là ít tờ tiền nhất (4 tờ), nên kết quả sẽ là 4.
+static int moneyChange(int a[], int x)
+    {
+        int result[] = new int[1000];
+        for (int i = 0; i < a.length; i++)
+            result[a[i]] = 1;
+        for (int i = 1; i <= x; i++)
+            for (int j = 0; j < a.length; j++)
+                if (i >= a[j]){
+                    if ((result[i] > result[i-a[j]] + 1 && result[i-a[j]] != 0) || (result[i] == 0 && result[i-a[j]] != 0)){
+                        result[i] = result[i-a[j]] + 1;
+                    }
+                }    
+return result[x];
+    }
+3. Dãy số 0, 1, 1, 2, 3, 5, 8, 13, ... được gọi là một dãy Fibonacci, được đặt tên theo nhà toán học người Ý, Leonardo Fibonacci. Mà quy tắc của dãy này chính là mỗi phần tử luôn bằng tổng hai phần tử trước nó, bắt đầu từ số 0 và số 1.
+Bài toán đặt ra ở đây là, cho một số nguyên n, hãy tách n thành tổng của nhiều số Fibonacii không trùng lặp nhất có thể và sau đó sắp xếp chúng theo thứ tự tăng dần. Nếu không có, hãy trả về [-1].
+Ví dụ:
+Với n = 8 thì fiboSum(n) = [1, 2, 5].
+Giải thích: 8 = 1 + 2 + 5
+Với n = 3 thì fiboSum(n) = [1, 2].
+Giải thích: 3 = 1 + 2 (edited) 

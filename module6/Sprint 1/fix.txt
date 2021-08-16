@@ -1,0 +1,5 @@
+tiltle
+trường viết thường
+tìm kiếm kết hợp
+detail bên phải or trái
+phân trang tìm kiếm

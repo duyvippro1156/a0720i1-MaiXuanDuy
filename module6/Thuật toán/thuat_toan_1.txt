@@ -1,0 +1,11 @@
+Bài 1.	Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+Ví dụ:
+●	Với s1 = "aabcc" và s2 = "adcaa", thì kết quả common(s1, s2) = 3.
+2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+Bài 2.	Cho một mảng số nguyên Hãy kiểm tra xem tần số xuất hiện của tất cả các số nguyên trong mảng có bằng nhau hay không
+Ví dụ:
+●	Với inputArray = [1, 2, 2, 1], thì kết quả check(inputArray) = true
+Số 1 và số 2 đều có tần số xuất hiện là 2
+●	Với inputArray = [1, 2, 2, 3, 1, 3, 1, 3], thì kết quả checkEqualFrequency(inputArray) = false.
+Số 1 có tần số xuất hiện là 3, khác vs số 2 và số 3 có tần số xuất hiện là 2
+

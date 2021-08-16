@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    categories=["Hành động", "Hài hước", "Lạng mạn", "Tình cảm", "Viễn tưởng", "Kinh dị"];
+    for (var i = 0; i < categories.length; i++){
+        document.write(checkContain(categories[i]));
+    }
+    function checkContain(category) {
+        const categories_data = "Hành động, Kinh dị";
+        return categories_data.includes(category);
+    }
+</script>
+</body>
+</html>

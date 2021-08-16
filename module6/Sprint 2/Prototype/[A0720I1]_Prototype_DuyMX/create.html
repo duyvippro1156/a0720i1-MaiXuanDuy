@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A0720I1 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+          rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+          rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+          rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+          rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">Trang chủ</a>
+            </li>
+        </ul>
+        <!-- Right navbar links -->
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+            <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">A0720I1 Cinemas</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="#" class="d-block">Admin</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-building"></i>
+                            <p>
+                                Rạp phim
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm rạp</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách rạp</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-door-open"></i>
+                            <p>
+                                Phòng chiếu
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm phòng chiếu</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách phòng chiếu</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-film"></i>
+                            <p>
+                                Phim
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm phim</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách phim</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-ticket-alt"></i>
+                            <p>
+                                Vé xem phim
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Tạo vé</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách vé</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-tags"></i>
+                            <p>
+                                Khuyến mãi
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm khuyến mãi</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách khuyến mãi</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                                Thành viên
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm thành viên</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách thành viên</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-id-badge"></i>
+                            <p>
+                                Nhân viên
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-plus-circle nav-icon ml-2"></i>
+                                    <p>Thêm nhân viên</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-list nav-icon ml-2"></i>
+                                    <p>Danh sách nhân viên</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p>
+                                Đăng xuất
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 font-weight-bold">Phim</h1>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="card shadow mb-4">
+                    <div class="card-header card-background-color ">
+                        <h3 class="m-0 font-weight-bold text-primary">Tạo mới phim</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card card-user">
+                                <div class="card-body">
+                                    <label class="required">Poster</label>
+                                    <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                        <div class="fileinput-new thumbnail img-raised">
+                                            <img src="http://fenlandershog.co.uk/wp-content/uploads/card_placeholder.png"
+                                                 style="width: 100%;" alt="..." rel="nofollow">
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail img-raised"></div>
+                                        <div>
+                           <span class="btn btn-info btn-round btn-default btn-file btn__upload-custom">
+                              <span class="fileinput-new">Upload</span>
+                              <input type="file" name="..."/>
+                           </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End table information-->
+                        <div class="col-md-9">
+                            <div class="card-user">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Tên phim</label>
+                                                    <input type="text" class="form-control" placeholder="Tên Phim">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required"> Từ ngày: </label>
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required"> Đến ngày: </label>
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required"> Diễn viên </label>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Nhập diễn viên">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required"> Hãng phim </label>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Nhập hãng phim">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required"> Đạo diễn </label>
+                                                    <input type="text" class="form-control" placeholder="Nhập đạo diễn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Thời lượng </label>
+                                                    <input type="number" class="form-control"
+                                                           placeholder="Nhập thời lượng phim">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Độ tuổi</label>
+                                                    <input class="form-control" type="text"
+                                                           placeholder="Giới hạn độ tuổi"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Trailer </label>
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Nhập link trailer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Thể loại </label>
+                                                    <div class="col-md-12">
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category1">
+                                                                <input type="checkbox" id="category1"> Hành động
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category2">
+                                                                <input type="checkbox" id="category2"> Hài hước
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category3">
+                                                                <input type="checkbox" id="category3"> Lạng mạn
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category4">
+                                                                <input type="checkbox" id="category4"> Tình cảm
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category5">
+                                                                <input type="checkbox" id="category5"> Viễn tưởng
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category6">
+                                                                <input type="checkbox" id="category6"> Chiến tranh
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category7">
+                                                                <input type="checkbox" id="category7"> Kiếm hiệp
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category8">
+                                                                <input type="checkbox" id="category8"> Âm nhạc
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category9">
+                                                                <input type="checkbox" id="category9"> Hoạt hình
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category10">
+                                                                <input type="checkbox" id="category10"> Kinh dị
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="categor11">
+                                                                <input type="checkbox" id="categor11"> Phiêu lưu
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category12">
+                                                                <input type="checkbox" id="category12"> Võ thuật
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category13">
+                                                                <input type="checkbox" id="category13"> Kinh điển
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline col-md-2">
+                                                            <label for="category14">
+                                                                <input type="checkbox" id="category14"> Tâm lý
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 pr-1">
+                                                <div class="form-group">
+                                                    <label class="required">Nội dung </label>
+                                                    <textarea class="form-control" rows="4"
+                                                              placeholder="Nhập nội dung"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 seat-layout d-flex flex-row justify-content-center ml-auto mr-auto mt-2 ">
+                                            <button class="btn btn-primary mr-1"> Quay lại</button>
+                                            <button type="submit" class="btn btn-success"> Tạo mới</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>@Codegym 2021 <a href="https://adminlte.io">A0720i1 Cinemas</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
